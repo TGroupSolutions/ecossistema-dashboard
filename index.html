@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecossistema T - Dashboard Central | Vanessa Barbosa Pontes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="dashboard-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <h1 class="ecosystem-logo">ECOSSISTEMA T</h1>
+                    <span class="ecosystem-subtitle">Inovação Integrada para Otimizar Resultados</span>
+                </div>
+                <div class="header-actions">
+                    <div class="sync-status">
+                        <div class="sync-indicator active"></div>
+                        <span>Sincronizado</span>
+                    </div>
+                    <div class="user-profile">
+                        <div class="profile-avatar">VP</div>
+                        <div class="profile-info">
+                            <span class="profile-name">Vanessa Pontes</span>
+                            <span class="profile-role">Founder & CEO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Dashboard -->
+    <main class="dashboard-main">
+        <!-- Overview Section -->
+        <section class="overview">
+            <div class="container">
+                <div class="overview-header">
+                    <h2 class="section-title">Visão Geral do Ecossistema</h2>
+                    <p class="section-subtitle">Dashboard executivo consolidado - Todas as plataformas em tempo real</p>
+                </div>
+
+                <!-- Key Metrics -->
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-icon">💰</div>
+                        <div class="metric-content">
+                            <h3 class="metric-value">R$ 1,89M</h3>
+                            <p class="metric-label">MRR Total Consolidado</p>
+                            <span class="metric-change positive">+23% vs mês anterior</span>
+                        </div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-icon">📈</div>
+                        <div class="metric-content">
+                            <h3 class="metric-value">R$ 22,75M</h3>
+                            <p class="metric-label">ARR Projetado</p>
+                            <span class="metric-change positive">+30% crescimento anual</span>
+                        </div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-icon">👥</div>
+                        <div class="metric-content">
+                            <h3 class="metric-value">39.000+</h3>
+                            <p class="metric-label">Clientes Ativos Total</p>
+                            <span class="metric-change positive">+1.2K esta semana</span>
+                        </div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-icon">🎯</div>
+                        <div class="metric-content">
+                            <h3 class="metric-value">R$ 780B+</h3>
+                            <p class="metric-label">Mercado Total</p>
+                            <span class="metric-change positive">38,2% crescimento/ano</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Market Overview -->
+                <div class="market-overview">
+                    <h3 class="overview-title">Posicionamento Estratégico</h3>
+                    <div class="market-stats">
+                        <div class="market-stat">
+                            <h4>Projeção Unicórnio</h4>
+                            <p class="market-value">2031-2033</p>
+                            <p class="market-growth">Valuation: <span class="text-primary">R$ 1B+</span></p>
+                        </div>
+                        <div class="market-stat">
+                            <h4>ROI Investidores</h4>
+                            <p class="market-value">45% em 3 anos</p>
+                            <p class="market-growth">Risco real: <span class="text-primary">25%</span></p>
+                        </div>
+                        <div class="market-stat">
+                            <h4>Financiamento</h4>
+                            <p class="market-value">R$ 17,5M total</p>
+                            <p class="market-growth">R$ 7,5M: <span class="text-primary">Bolsa SP garantida</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Platforms Section -->
+        <section class="platforms">
+            <div class="container">
+                <h2 class="section-title">5 Plataformas Integradas</h2>
+                <p class="section-subtitle">Acesso direto e métricas em tempo real</p>
+
+                <div class="platforms-grid">
+                    <!-- TBANK -->
+                    <div class="platform-card" data-platform="tbank">
+                        <div class="platform-header">
+                            <div class="platform-logo">
+                                <span class="platform-icon">🏦</span>
+                                <div class="platform-info">
+                                    <h3 class="platform-name">TBANK</h3>
+                                    <p class="platform-subtitle">Fintech + API Pagamentos</p>
+                                </div>
+                            </div>
+                            <div class="platform-status">
+                                <span class="status-indicator operational"></span>
+                                <span class="status-text">Operacional</span>
+                            </div>
+                        </div>
+
+                        <div class="platform-metrics">
+                            <div class="metric">
+                                <span class="metric-label">MRR</span>
+                                <span class="metric-value">R$ 448K</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Clientes</span>
+                                <span class="metric-value">15.000</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Mercado</span>
+                                <span class="metric-value">R$ 125bi</span>
+                            </div>
+                        </div>
+
+                        <div class="platform-features">
+                            <span class="feature-tag">API Pagamentos</span>
+                            <span class="feature-tag">Folha PMEs</span>
+                            <span class="feature-tag">PCI-DSS</span>
+                        </div>
+
+                        <div class="platform-actions">
+                            <a href="https://tbank.tgroupsolutions.tech" target="_blank" class="btn btn--primary">Acessar TBANK</a>
+                        </div>
+                    </div>
+
+                    <!-- TIMOB -->
+                    <div class="platform-card" data-platform="timob">
+                        <div class="platform-header">
+                            <div class="platform-logo">
+                                <span class="platform-icon">🏢</span>
+                                <div class="platform-info">
+                                    <h3 class="platform-name">TIMOB</h3>
+                                    <p class="platform-subtitle">Imobiliário + IA Leilões</p>
+                                </div>
+                            </div>
+                            <div class="platform-status">
+                                <span class="status-indicator operational"></span>
+                                <span class="status-text">Operacional</span>
+                            </div>
+                        </div>
+
+                        <div class="platform-metrics">
+                            <div class="metric">
+                                <span class="metric-label">MRR</span>
+                                <span class="metric-value">R$ 375K</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Clientes</span>
+                                <span class="metric-value">2.500</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Mercado</span>
+                                <span class="metric-value">R$ 312bi</span>
+                            </div>
+                        </div>
+
+                        <div class="platform-features">
+                            <span class="feature-tag">IA Leilões</span>
+                            <span class="feature-tag">Viabilidade</span>
+                            <span class="feature-tag">Compliance</span>
+                        </div>
+
+                        <div class="platform-actions">
+                            <a href="https://timob.tgroupsolutions.tech" target="_blank" class="btn btn--primary">Acessar TIMOB</a>
+                        </div>
+                    </div>
+
+                    <!-- TCONSTRU -->
+                    <div class="platform-card" data-platform="tconstru">
+                        <div class="platform-header">
+                            <div class="platform-logo">
+                                <span class="platform-icon">🏗️</span>
+                                <div class="platform-info">
+                                    <h3 class="platform-name">TCONSTRU</h3>
+                                    <p class="platform-subtitle">Marketplace B2B2C</p>
+                                </div>
+                            </div>
+                            <div class="platform-status">
+                                <span class="status-indicator operational"></span>
+                                <span class="status-text">Operacional</span>
+                            </div>
+                        </div>
+
+                        <div class="platform-metrics">
+                            <div class="metric">
+                                <span class="metric-label">MRR</span>
+                                <span class="metric-value">R$ 399K</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Clientes</span>
+                                <span class="metric-value">8.000</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Mercado</span>
+                                <span class="metric-value">R$ 37bi</span>
+                            </div>
+                        </div>
+
+                        <div class="platform-features">
+                            <span class="feature-tag">Clube Compras</span>
+                            <span class="feature-tag">White Label</span>
+                            <span class="feature-tag">Franquias</span>
+                        </div>
+
+                        <div class="platform-actions">
+                            <a href="https://tconstru.tgroupsolutions.tech" target="_blank" class="btn btn--primary">Acessar TCONSTRU</a>
+                        </div>
+                    </div>
+
+                    <!-- HOME T -->
+                    <div class="platform-card" data-platform="homet">
+                        <div class="platform-header">
+                            <div class="platform-logo">
+                                <span class="platform-icon">🏠</span>
+                                <div class="platform-info">
+                                    <h3 class="platform-name">HOME T</h3>
+                                    <p class="platform-subtitle">E-commerce + Assinatura</p>
+                                </div>
+                            </div>
+                            <div class="platform-status">
+                                <span class="status-indicator operational"></span>
+                                <span class="status-text">Operacional</span>
+                            </div>
+                        </div>
+
+                        <div class="platform-metrics">
+                            <div class="metric">
+                                <span class="metric-label">MRR</span>
+                                <span class="metric-value">R$ 424K</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Clientes</span>
+                                <span class="metric-value">8.500</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Mercado</span>
+                                <span class="metric-value">R$ 157bi</span>
+                            </div>
+                        </div>
+
+                        <div class="platform-features">
+                            <span class="feature-tag">E-commerce</span>
+                            <span class="feature-tag">Assinatura R$49,90</span>
+                            <span class="feature-tag">1.580+ Produtos</span>
+                        </div>
+
+                        <div class="platform-actions">
+                            <a href="https://homet.tgroupsolutions.tech" target="_blank" class="btn btn--primary">Acessar HOME T</a>
+                        </div>
+                    </div>
+
+                    <!-- TGROWTH -->
+                    <div class="platform-card" data-platform="tgrowth">
+                        <div class="platform-header">
+                            <div class="platform-logo">
+                                <span class="platform-icon">🚀</span>
+                                <div class="platform-info">
+                                    <h3 class="platform-name">TGROWTH</h3>
+                                    <p class="platform-subtitle">IA Marketing + TBOT</p>
+                                </div>
+                            </div>
+                            <div class="platform-status">
+                                <span class="status-indicator operational"></span>
+                                <span class="status-text">Operacional</span>
+                            </div>
+                        </div>
+
+                        <div class="platform-metrics">
+                            <div class="metric">
+                                <span class="metric-label">MRR</span>
+                                <span class="metric-value">R$ 250K</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Clientes</span>
+                                <span class="metric-value">5.000</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Mercado</span>
+                                <span class="metric-value">R$ 148bi</span>
+                            </div>
+                        </div>
+
+                        <div class="platform-features">
+                            <span class="feature-tag">TBOT IA</span>
+                            <span class="feature-tag">Analytics</span>
+                            <span class="feature-tag">Carreiras</span>
+                        </div>
+
+                        <div class="platform-actions">
+                            <a href="https://tgrowth.tgroupsolutions.tech" target="_blank" class="btn btn--primary">Acessar TGROWTH</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Charts Section -->
+        <section class="analytics">
+            <div class="container">
+                <h2 class="section-title">Analytics Consolidado</h2>
+                <div class="charts-grid">
+                    <div class="chart-container">
+                        <h3 class="chart-title">MRR por Plataforma</h3>
+                        <canvas id="mrrChart"></canvas>
+                    </div>
+                    <div class="chart-container">
+                        <h3 class="chart-title">Projeção de Crescimento 5 Anos</h3>
+                        <canvas id="growthChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Countdown Section -->
+        <section class="countdown-section">
+            <div class="container">
+                <h2 class="section-title">Rumo ao <span class="text-primary">Unicórnio</span></h2>
+                <p class="section-subtitle">Projeção: 6-8 anos para atingir R$ 1B+ de valuation</p>
+
+                <div class="countdown-container">
+                    <div class="countdown-item">
+                        <span class="countdown-number">6</span>
+                        <span class="countdown-label">Anos Meta</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number">R$ 1B+</span>
+                        <span class="countdown-label">Valuation Alvo</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number">45%</span>
+                        <span class="countdown-label">ROI 3 Anos</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number">5</span>
+                        <span class="countdown-label">Plataformas</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="section-title">Contato Founder</h2>
+                    <p class="section-subtitle">Vanessa Barbosa Pontes - Founder & CEO</p>
+
+                    <div class="founder-info">
+                        <div class="founder-details">
+                            <h4>Trajetória</h4>
+                            <ul>
+                                <li>45 anos, Administração + Comércio Exterior</li>
+                                <li>15+ certificações em gestão e T.I</li>
+                                <li>Ex-empreendedora transportadora (R$ 1M em 10 meses)</li>
+                                <li>Especialista construção civil e decoração</li>
+                                <li>30 meses dedicação total ao Ecossistema T</li>
+                            </ul>
+                        </div>
+
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <i class="fas fa-envelope"></i>
+                                <div class="contact-method__content">
+                                    <h4>Email Direto</h4>
+                                    <a href="mailto:vanessa@tgroupsolutions.com">vanessa@tgroupsolutions.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <i class="fas fa-briefcase"></i>
+                                <div class="contact-method__content">
+                                    <h4>Investidores</h4>
+                                    <a href="mailto:investidores@tgroupsolutions.com">investidores@tgroupsolutions.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="founderContactForm" class="form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nome Completo</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Telefone</label>
+                                <input type="tel" id="phone" name="phone" class="form-input">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="interest" class="form-label">Interesse</label>
+                            <select id="interest" name="interest" class="form-select">
+                                <option value="">Selecione...</option>
+                                <option value="investimento">Investimento / Parceria</option>
+                                <option value="integracao">Integração Ecossistema</option>
+                                <option value="consultoria">Consultoria Estratégica</option>
+                                <option value="fornecedor">Fornecedor / Parceiro</option>
+                                <option value="cliente">Cliente Enterprise</option>
+                                <option value="imprensa">Imprensa / Media</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Mensagem</label>
+                            <textarea id="message" name="message" rows="5" class="form-textarea" placeholder="Conte-nos sobre sua proposta ou interesse..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary btn--full">Enviar para Vanessa</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3 class="footer-title">Ecossistema T</h3>
+                    <p class="footer-description">Inovação Integrada para Otimizar Resultados</p>
+                    <p class="footer-founder">Founder: <strong>Vanessa Barbosa Pontes</strong></p>
+                    <p class="footer-mission">Missão: Impactar pessoas para fazerem a diferença como empreendedores</p>
+                </div>
+                <div class="footer-platforms">
+                    <h4>Nossas Plataformas</h4>
+                    <div class="platform-links">
+                        <a href="https://tbank.tgroupsolutions.tech" target="_blank">TBANK - Fintech</a>
+                        <a href="https://timob.tgroupsolutions.tech" target="_blank">TIMOB - Imobiliário</a>
+                        <a href="https://tconstru.tgroupsolutions.tech" target="_blank">TCONSTRU - Construção</a>
+                        <a href="https://homet.tgroupsolutions.tech" target="_blank">HOME T - E-commerce</a>
+                        <a href="https://tgrowth.tgroupsolutions.tech" target="_blank">TGROWTH - Marketing IA</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ecossistema T. Todos os direitos reservados.</p>
+                <p class="unicorn-vision">🦄 Rumo ao unicórnio brasileiro!</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
